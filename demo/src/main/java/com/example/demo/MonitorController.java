@@ -1,34 +1,37 @@
 package com.example.demo;
 
-import java.time.LocalDateTime;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.ProductionUnit;
-import com.example.demo.model.Record;
-import com.example.demo.repository.MonitorRepository;
+import com.example.demo.service.MonitorService;
 
 @RestController
 public class MonitorController {
 
 	@Autowired
-	private MonitorRepository service;
+	private MonitorService monitorService;
 
 	@GetMapping("/testAddRecord")
 	@ResponseBody
-	public String addRecords(@RequestParam(name = "unitName", required = true) String name) {
+	public ResponseEntity<Integer> addRecord(@RequestParam(name = "machineName", required = true) String name,
+			@RequestParam(name = "unitCount", required = true) Integer count) {
 
-		ProductionUnit unit = this.service.findByName(name);
-		int count = unit.getRecords().size();
-		unit.addRecord(new Record(unit, LocalDateTime.now(), 200));
-		this.service.save(unit);
+		this.monitorService.addRecord(name, count);
 
-		int newCount = this.service.findByName(name).getRecords().size();
+		Integer totalCount;
+		try {
+			// From beginning of time
+			totalCount = this.monitorService.getNumberOfUnitsProducedBetween(name, null, null);
+		} catch (Exception e) {
+			return new ResponseEntity<>(HttpStatus.SERVICE_UNAVAILABLE);
+		}
 
-		return "Added " + (newCount - count) + " record/s. Total count is: " + newCount;
+		return new ResponseEntity<>(totalCount, HttpStatus.OK);
+
 	}
 }

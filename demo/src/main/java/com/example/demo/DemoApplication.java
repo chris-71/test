@@ -7,11 +7,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
-import com.example.demo.model.ProductionUnit;
-import com.example.demo.repository.MonitorRepository;
+import com.example.demo.model.KnittingMachine;
+import com.example.demo.repository.KnittingMachineRepository;
 
+//for jsr310 java 8 java.time.*
+@EntityScan(basePackageClasses = { DemoApplication.class, Jsr310JpaConverters.class })
 @SpringBootApplication
 public class DemoApplication {
 
@@ -22,21 +27,25 @@ public class DemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(MonitorRepository repository) {
-		return (args) -> {
-			repository.save(new ProductionUnit(1, "first", new URL("http://127.0.0.1")));
-			repository.save(new ProductionUnit(2, "second", new URL("http://127.0.0.1")));
-			repository.save(new ProductionUnit(3, "third", new URL("http://127.0.0.1")));
-			repository.save(new ProductionUnit(4, "fourth", new URL("http://127.0.0.1")));
+	public CommandLineRunner demo(KnittingMachineRepository repository) {
+		return args -> {
+			repository.save(new KnittingMachine("first", new URL("http://127.0.0.1"), 1000));
+			repository.save(new KnittingMachine("second", new URL("http://127.0.0.1"), 1000));
+			repository.save(new KnittingMachine("third", new URL("http://127.0.0.1"), 1000));
+			repository.save(new KnittingMachine("fourth", new URL("http://127.0.0.1"), 1000));
 
 			log.info("Entries found with findAll():");
 			log.info("-----------------------------");
-			for (ProductionUnit m : repository.findAll()) {
+			for (KnittingMachine m : repository.findAll()) {
 				log.info(m.toString());
 			}
 
 			log.info("Try add unit with non-unique name");
-			repository.save(new ProductionUnit(4, "fourth", new URL("http://127.0.0.1")));
+			try {
+				repository.save(new KnittingMachine("fourth", new URL("http://127.0.0.1"), 1000));
+			} catch (DataIntegrityViolationException ex) {
+				log.info(ex.getMessage());
+			}
 		};
 	}
 }
