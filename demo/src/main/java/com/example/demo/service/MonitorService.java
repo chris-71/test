@@ -2,14 +2,13 @@ package com.example.demo.service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Collection;
 
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
-import com.example.demo.StatisticsResponse;
 import com.example.demo.exception.DuplicateEntityException;
 import com.example.demo.exception.EntityNotFoundException;
+import com.example.demo.types.StatisticsResponse;
 
 /**
  * @author Christer Jonsson
@@ -58,6 +57,6 @@ public interface MonitorService {
 	 *
 	 * @return collection of statistics from each machine
 	 */
-	Collection<StatisticsResponse> getResult(LocalDate localDate);
+	StatisticsResponse getResult(LocalDate localDate);
 
 }

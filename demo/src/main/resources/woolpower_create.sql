@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `monitorDB` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `monitorDB`;
+CREATE DATABASE  IF NOT EXISTS `monitordb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+USE `monitordb`;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -21,12 +21,13 @@ DROP TABLE IF EXISTS `knitting_machine`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `knitting_machine` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `counter_max` int(11) DEFAULT NULL,
   `daily_production_target` int(11) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
   `url` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_5jb0mcvuloknb47657holcupi` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +45,7 @@ CREATE TABLE `log_record` (
   PRIMARY KEY (`id`),
   KEY `FKmyenr1oj8e2kq271thnu6bhob` (`knitting_machine_id`),
   CONSTRAINT `FKmyenr1oj8e2kq271thnu6bhob` FOREIGN KEY (`knitting_machine_id`) REFERENCES `knitting_machine` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

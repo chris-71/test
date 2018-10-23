@@ -17,13 +17,14 @@ import java.util.Locale;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.StatisticsResponse;
 import com.example.demo.exception.DuplicateEntityException;
 import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.model.KnittingMachine;
 import com.example.demo.model.LogRecord;
 import com.example.demo.repository.KnittingMachineRepository;
 import com.example.demo.repository.LogRecordRepository;
+import com.example.demo.types.MachineStats;
+import com.example.demo.types.StatisticsResponse;
 
 import lombok.Data;
 
@@ -151,9 +152,7 @@ public class MonitorServiceImpl implements MonitorService {
 	}
 
 	@Override
-	public Collection<StatisticsResponse> getResult(LocalDate localDate) {
-
-		Collection<StatisticsResponse> response = new ArrayList<>();
+	public StatisticsResponse getResult(LocalDate localDate) {
 
 		TemporalField woy = WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear();
 		int weekNbr = localDate.get(woy);
@@ -166,16 +165,19 @@ public class MonitorServiceImpl implements MonitorService {
 		LocalDateTime startOfWeek = startOfDay.with(firstDayOfWeek);
 		LocalDateTime endOfWeek = endOfDay.with(TemporalAdjusters.nextOrSame(lastDayOfWeek));
 
+		StatisticsResponse response = new StatisticsResponse(weekNbr);
+
 		for (KnittingMachine km : this.knittingMachineRepository.findAll()) {
 			Long machineId = km.getId();
-			System.out.println(machineId);
 			Integer counterMax = km.getCounterMax();
 
 			Collection<Integer> producedDay = getProducedUnitsWeekly(machineId, counterMax, startOfDay);
 			Integer currentWeekTotal = getNumberOfUnitsProducedBetween(machineId, counterMax, startOfWeek, endOfWeek);
-
-			response.add(new StatisticsResponse(machineId, km.getName(), weekNbr, km.getDailyProductionTarget(),
-					producedDay, currentWeekTotal));
+			MachineStats stats = new MachineStats(machineId, km.getName(), km.getDailyProductionTarget(), producedDay,
+					currentWeekTotal);
+			response.getStatistics().add(stats);
+//			response.add(new StatisticsResponse(machineId, km.getName(), weekNbr, km.getDailyProductionTarget(),
+//					producedDay, currentWeekTotal));
 		}
 		return response;
 	}

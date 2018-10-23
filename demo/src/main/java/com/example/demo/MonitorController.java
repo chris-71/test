@@ -3,31 +3,34 @@ package com.example.demo;
 import java.time.LocalDate;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
-import java.util.Collection;
 import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.exception.DuplicateEntityException;
 import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.service.MonitorService;
+import com.example.demo.types.StatisticsResponse;
 
 @RestController
+@RequestMapping("/api")
 public class MonitorController {
 	private static final Logger log = LoggerFactory.getLogger(MonitorController.class);
 
 	@Autowired
 	private MonitorService monitorService;
 
-	@GetMapping("/getWeekDetails")
-	public ResponseEntity<Collection<StatisticsResponse>> getWeekDetails(
+	@GetMapping(value = "/details/", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<StatisticsResponse> getWeekDetails(
 			@RequestParam(name = "weekNbr", required = false) Integer weekNbr,
 			@RequestParam(name = "year", required = false) Integer year) {
 
@@ -45,10 +48,11 @@ public class MonitorController {
 		}
 
 		try {
-			return new ResponseEntity<>(this.monitorService.getResult(localDate), HttpStatus.OK);
+			StatisticsResponse response = this.monitorService.getResult(localDate);
+			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (Exception e) {
 			log.error(e.getMessage());
-			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 	}
 
