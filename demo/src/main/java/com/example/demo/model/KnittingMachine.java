@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-import java.net.URL;
 import java.util.Collection;
 
 import javax.persistence.CascadeType;
@@ -12,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,17 +23,21 @@ import lombok.Setter;
 public class KnittingMachine {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+	@GenericGenerator(name = "native", strategy = "native")
 	private Long id;
 
 	@Column(unique = true)
 	private String name;
 
 	@Column
-	private URL url;
+	private String url;
 
 	@Column
 	private Integer dailyProductionTarget;
+
+	@Column
+	private Integer counterMax;
 
 	@OneToMany(mappedBy = "knittingMachine", cascade = CascadeType.ALL)
 	private Collection<LogRecord> records;
@@ -40,10 +45,11 @@ public class KnittingMachine {
 	protected KnittingMachine() {
 	}
 
-	public KnittingMachine(String name, URL url, Integer dailyProductionTarget) {
+	public KnittingMachine(String name, String url, Integer dailyProductionTarget, Integer counterMax) {
 		this.name = name;
 		this.url = url;
 		this.dailyProductionTarget = dailyProductionTarget;
+		this.counterMax = counterMax;
 	}
 
 	public void addRecord(LogRecord record) {

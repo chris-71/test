@@ -1,7 +1,7 @@
 package com.example.demo.repository;
 
 import java.time.LocalDateTime;
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
@@ -9,6 +9,9 @@ import com.example.demo.model.LogRecord;
 
 public interface LogRecordRepository extends CrudRepository<LogRecord, Long> {
 
-	Collection<LogRecord> findAllByKnittingMachineIdAndLoggedAtBetween(Long machineId, LocalDateTime from,
+	List<LogRecord> findAllByKnittingMachineIdAndLoggedAtBetweenOrderByLoggedAtAsc(Long id, LocalDateTime from,
 			LocalDateTime to);
+
+	LogRecord findTopByKnittingMachineIdAndLoggedAtBeforeOrderByLoggedAtDesc(Long id, LocalDateTime date);
+
 }
