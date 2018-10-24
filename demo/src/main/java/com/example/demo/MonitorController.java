@@ -29,7 +29,7 @@ public class MonitorController {
 	@Autowired
 	private MonitorService monitorService;
 
-	@GetMapping(value = "/details/", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/stats/", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<StatisticsResponse> getWeekDetails(
 			@RequestParam(name = "weekNbr", required = false) Integer weekNbr,
 			@RequestParam(name = "year", required = false) Integer year) {
@@ -55,17 +55,6 @@ public class MonitorController {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 	}
-
-//	@GetMapping("/getWeekOverview")
-//	public ResponseEntity<Collection<StatisticsResponse>> getCurrentWeek() {
-//
-//		try {
-//			return new ResponseEntity<>(this.monitorService.pollMachines(), HttpStatus.OK);
-//		} catch (Exception e) {
-//			log.error(e.getMessage());
-//			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//		}
-//	}
 
 	@GetMapping("/addMachine")
 	public ResponseEntity<Void> addMachine(@RequestParam(name = "machineName", required = true) String name,
@@ -98,22 +87,4 @@ public class MonitorController {
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
-	// TODO: TEST! Remove later
-	@GetMapping("/addRecord")
-	public ResponseEntity<Void> addRecord(@RequestParam(name = "machineName", required = true) String name,
-			@RequestParam(name = "unitCount", required = true) Integer count) {
-
-		this.monitorService.addRecord(name, count);
-
-//		Integer totalCount;
-//		try {
-//			// From beginning of time
-//			totalCount = this.monitorService.getNumberOfUnitsProducedBetween(name, null, null);
-//		} catch (Exception e) {
-//			return new ResponseEntity<>(HttpStatus.SERVICE_UNAVAILABLE);
-//		}
-
-		return new ResponseEntity<>(HttpStatus.OK);
-
-	}
 }

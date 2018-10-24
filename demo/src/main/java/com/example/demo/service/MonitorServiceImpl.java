@@ -69,19 +69,52 @@ public class MonitorServiceImpl implements MonitorService {
 		}
 	}
 
-	// TODO: Test only
 	@Override
-	public Integer getNumberOfUnitsProducedBetween(String name, LocalDateTime from, LocalDateTime to) {
-		KnittingMachine km = null;
+	public void addRecord(String machineName, Integer count) {
+		KnittingMachine machine;
 		try {
-			km = getMachine(name);
+			machine = getMachine(machineName);
 		} catch (EntityNotFoundException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.getMessage();
+			return;
 		}
+		machine.addRecord(new LogRecord(machine, count));
+		this.knittingMachineRepository.save(machine);
+	}
 
-		return getNumberOfUnitsProducedBetween(km.getId(), new Integer(100), from, to);
+	@Override
+	public StatisticsResponse getResult(LocalDate localDate) {
 
+		TemporalField woy = WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear();
+		int weekNbr = localDate.get(woy);
+
+		LocalDateTime startOfDay = localDate.atStartOfDay();
+		LocalDateTime endOfDay = startOfDay.with(ChronoField.NANO_OF_DAY, LocalTime.MAX.toNanoOfDay());
+
+		DayOfWeek firstDayOfWeek = WeekFields.of(Locale.getDefault()).getFirstDayOfWeek();
+		DayOfWeek lastDayOfWeek = firstDayOfWeek.plus(6);
+		LocalDateTime startOfWeek = startOfDay.with(firstDayOfWeek);
+		LocalDateTime endOfWeek = endOfDay.with(TemporalAdjusters.nextOrSame(lastDayOfWeek));
+
+		StatisticsResponse response = new StatisticsResponse(weekNbr);
+
+		for (KnittingMachine km : this.knittingMachineRepository.findAll()) {
+			Long machineId = km.getId();
+			Integer counterMax = km.getCounterMax();
+
+			Collection<Integer> producedDay = getProducedUnitsWeekly(machineId, counterMax, startOfDay);
+			Integer currentWeekTotal = getNumberOfUnitsProducedBetween(machineId, counterMax, startOfWeek, endOfWeek);
+			MachineStats stats = new MachineStats(machineId, km.getName(), km.getDailyProductionTarget(), producedDay,
+					currentWeekTotal);
+			response.getStatistics().add(stats);
+		}
+		return response;
+	}
+
+	private KnittingMachine getMachine(String machineName) throws EntityNotFoundException {
+		return this.knittingMachineRepository.findByName(machineName).stream().findFirst()
+				.orElseThrow(() -> new EntityNotFoundException("Machine not found: " + machineName));
 	}
 
 	private Collection<Integer> getProducedUnitsWeekly(Long machineId, Integer counterMax, LocalDateTime date) {
@@ -136,55 +169,4 @@ public class MonitorServiceImpl implements MonitorService {
 		}
 		return totalCount;
 	}
-
-	@Override
-	public void addRecord(String machineName, Integer count) {
-		KnittingMachine machine;
-		try {
-			machine = getMachine(machineName);
-		} catch (EntityNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.getMessage();
-			return;
-		}
-		machine.addRecord(new LogRecord(machine, count));
-		this.knittingMachineRepository.save(machine);
-	}
-
-	@Override
-	public StatisticsResponse getResult(LocalDate localDate) {
-
-		TemporalField woy = WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear();
-		int weekNbr = localDate.get(woy);
-
-		LocalDateTime startOfDay = localDate.atStartOfDay();
-		LocalDateTime endOfDay = startOfDay.with(ChronoField.NANO_OF_DAY, LocalTime.MAX.toNanoOfDay());
-
-		DayOfWeek firstDayOfWeek = WeekFields.of(Locale.getDefault()).getFirstDayOfWeek();
-		DayOfWeek lastDayOfWeek = firstDayOfWeek.plus(6);
-		LocalDateTime startOfWeek = startOfDay.with(firstDayOfWeek);
-		LocalDateTime endOfWeek = endOfDay.with(TemporalAdjusters.nextOrSame(lastDayOfWeek));
-
-		StatisticsResponse response = new StatisticsResponse(weekNbr);
-
-		for (KnittingMachine km : this.knittingMachineRepository.findAll()) {
-			Long machineId = km.getId();
-			Integer counterMax = km.getCounterMax();
-
-			Collection<Integer> producedDay = getProducedUnitsWeekly(machineId, counterMax, startOfDay);
-			Integer currentWeekTotal = getNumberOfUnitsProducedBetween(machineId, counterMax, startOfWeek, endOfWeek);
-			MachineStats stats = new MachineStats(machineId, km.getName(), km.getDailyProductionTarget(), producedDay,
-					currentWeekTotal);
-			response.getStatistics().add(stats);
-//			response.add(new StatisticsResponse(machineId, km.getName(), weekNbr, km.getDailyProductionTarget(),
-//					producedDay, currentWeekTotal));
-		}
-		return response;
-	}
-
-	private KnittingMachine getMachine(String machineName) throws EntityNotFoundException {
-		return this.knittingMachineRepository.findByName(machineName).stream().findFirst()
-				.orElseThrow(() -> new EntityNotFoundException("Machine not found: " + machineName));
-	}
-
 }

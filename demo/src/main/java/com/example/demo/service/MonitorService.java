@@ -1,10 +1,6 @@
 package com.example.demo.service;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-
-import org.springframework.lang.NonNull;
-import org.springframework.lang.Nullable;
 
 import com.example.demo.exception.DuplicateEntityException;
 import com.example.demo.exception.EntityNotFoundException;
@@ -36,12 +32,6 @@ public interface MonitorService {
 	 * @param newName the new name
 	 */
 	void renameMachine(String oldName, String newName) throws DuplicateEntityException, EntityNotFoundException;
-
-	/**
-	 * only for test
-	 */
-	Integer getNumberOfUnitsProducedBetween(@NonNull String machineName, @Nullable LocalDateTime fromDate,
-			@Nullable LocalDateTime toDate) throws EntityNotFoundException;
 
 	/**
 	 * Adds a record to the database with a number of produced units and associates
