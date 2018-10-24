@@ -31,8 +31,8 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-actuator')
 	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
 	implementation('org.webjars:bootstrap:3.3.7')
-	runtimeOnly('org.springframework.boot:spring-boot-devtools')
+	//runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	runtimeOnly('com.h2database:h2')
 	runtimeOnly('mysql:mysql-connector-java')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	//testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
