@@ -1,6 +1,7 @@
 
    var weekDays = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag"];
    
+   
    function showTable(callback) {
 	   $.getJSON('http://localhost:8080/api/stats/', function (data) {
 	     callback(data);

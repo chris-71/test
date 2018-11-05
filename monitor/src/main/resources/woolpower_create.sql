@@ -21,10 +21,9 @@ DROP TABLE IF EXISTS `knitting_machine`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `knitting_machine` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `counter_max` int(11) DEFAULT NULL,
   `daily_production_target` int(11) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL,
+  `address` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_5jb0mcvuloknb47657holcupi` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

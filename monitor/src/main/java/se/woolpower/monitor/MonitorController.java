@@ -59,12 +59,11 @@ public class MonitorController {
 
 	@GetMapping("/addMachine")
 	public ResponseEntity<Void> addMachine(@RequestParam(name = "machineName", required = true) String name,
-			@RequestParam(name = "url", required = true) String url,
-			@RequestParam(name = "dailyProductionTarget", required = false) Integer dailyProductionTarget,
-			@RequestParam(name = "counterMax", required = true) Integer counterMax) {
+			@RequestParam(name = "address", required = true) Integer address,
+			@RequestParam(name = "dailyProductionTarget", required = false) Integer dailyProductionTarget) {
 
 		try {
-			this.monitorService.addMachine(name, url, dailyProductionTarget, counterMax);
+			this.monitorService.addMachine(name, address, dailyProductionTarget);
 		} catch (DuplicateEntityException e) {
 			this.logger.error(e.getMessage());
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

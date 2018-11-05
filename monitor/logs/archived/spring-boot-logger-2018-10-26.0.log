@@ -1,0 +1,135 @@
+2018-10-26 11:15:13,866 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-26 11:15:14,907 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 970 ms
+2018-10-26 11:15:16,015 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-26 11:15:16,140 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36902638: startup date [Fri Oct 26 11:15:13 CEST 2018]; root of context hierarchy
+2018-10-26 11:15:16,159 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-26 11:15:16,179 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-26 11:15:16,179 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-26 11:15:16,180 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-26 11:15:16,182 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-26 11:15:16,182 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-26 11:15:16,200 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-26 11:15:16,200 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-26 11:15:29,119 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-26 11:15:29,131 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-10-26 11:16:00,001 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:16:00,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:16:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:16:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:16:06,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:16:06,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:16:09,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:16:09,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:16:12,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:16:12,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:16:15,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:16:15,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:16:18,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:16:18,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-26 11:16:21,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-26 11:16:21,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-26 11:16:24,017 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-26 11:16:24,020 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-26 11:16:27,020 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-26 11:16:27,021 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-26 11:16:30,021 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-26 11:17:00,002 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:17:00,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:17:03,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:17:03,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:17:06,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:17:06,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:17:09,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:17:09,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:17:12,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:17:12,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:17:15,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:17:15,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:17:18,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:17:18,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-26 11:17:21,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-26 11:17:21,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-26 11:17:24,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-26 11:17:24,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-26 11:17:27,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-26 11:17:27,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-26 11:17:30,015 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-26 11:18:00,001 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:18:00,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:18:03,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:18:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:18:06,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:18:06,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:18:09,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:18:09,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:18:12,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:18:12,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:18:15,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:18:15,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:18:18,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:18:18,015 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-26 11:18:21,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-26 11:18:21,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-26 11:18:24,017 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-26 11:18:24,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-26 11:18:27,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-26 11:18:27,019 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-26 11:18:30,020 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-26 11:19:00,000 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:19:00,004 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:19:03,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:19:03,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:19:06,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:19:06,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:19:09,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:19:09,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:19:12,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:19:12,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:19:15,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:19:15,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:19:18,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:19:18,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-26 11:19:21,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-26 11:19:21,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-26 11:19:24,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-26 11:19:24,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-26 11:19:27,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-26 11:19:27,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-26 11:19:30,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-26 11:20:00,001 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:20:00,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:20:03,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:20:03,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:20:06,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:20:06,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:20:09,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:20:09,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:20:12,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:20:12,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:20:15,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:20:15,011 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:20:18,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:20:18,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-26 11:20:21,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-26 11:20:21,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-26 11:20:24,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-26 11:20:24,015 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-26 11:20:27,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-26 11:20:27,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-26 11:20:30,016 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-26 11:21:00,001 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-26 11:21:00,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-26 11:21:03,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-26 11:21:03,007 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-26 11:21:06,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-26 11:21:06,008 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-26 11:21:08,014 ERROR se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] sleep interrupted
+2018-10-26 11:21:08,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-26 11:21:08,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-26 11:21:08,017 ERROR se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] sleep interrupted
+2018-10-26 11:21:08,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-26 11:21:08,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-26 11:21:11,019 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-26 11:21:11,019 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-26 11:21:14,020 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-26 11:21:14,020 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja

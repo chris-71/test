@@ -9,4 +9,6 @@ import se.woolpower.monitor.model.KnittingMachine;
 public interface KnittingMachineRepository extends CrudRepository<KnittingMachine, Long> {
 
 	Collection<KnittingMachine> findByName(String machineName);
+
+	KnittingMachine findTopByAddress(int address);
 }

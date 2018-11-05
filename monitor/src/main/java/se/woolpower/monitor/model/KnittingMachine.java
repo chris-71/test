@@ -5,6 +5,7 @@ import java.util.Collection;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -31,25 +32,21 @@ public class KnittingMachine {
 	private String name;
 
 	@Column
-	private String url;
+	private Integer address;
 
 	@Column
 	private Integer dailyProductionTarget;
 
-	@Column
-	private Integer counterMax;
-
-	@OneToMany(mappedBy = "knittingMachine", cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "knittingMachine", cascade = CascadeType.ALL)
 	private Collection<LogRecord> records;
 
 	protected KnittingMachine() {
 	}
 
-	public KnittingMachine(String name, String url, Integer dailyProductionTarget, Integer counterMax) {
+	public KnittingMachine(String name, Integer address, Integer dailyProductionTarget) {
 		this.name = name;
-		this.url = url;
+		this.address = address;
 		this.dailyProductionTarget = dailyProductionTarget;
-		this.counterMax = counterMax;
 	}
 
 	public void addRecord(LogRecord record) {

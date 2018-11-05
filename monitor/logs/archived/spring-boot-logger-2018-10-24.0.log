@@ -1,0 +1,566 @@
+2018-10-24 13:29:30,317 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 13:29:30,379 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on DESKTOP-BFFC9PR with PID 21596 (C:\Users\chris\git\test\demo\bin\main started by chris in C:\Users\chris\git\test\demo)
+2018-10-24 13:29:30,379 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: prod
+2018-10-24 13:29:30,395 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60df60da: startup date [Wed Oct 24 13:29:30 CEST 2018]; root of context hierarchy
+2018-10-24 13:29:31,019 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1daff6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 13:29:31,249 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-10-24 13:29:31,259 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:29:31,265 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-10-24 13:29:31,266 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 13:29:31,269 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\chris\AppData\Local\Microsoft\WindowsApps;C:\Users\chris\AppData\Local\GitHubDesktop\bin;.]
+2018-10-24 13:29:31,333 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-10-24 13:29:31,333 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 938 ms
+2018-10-24 13:29:31,379 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-10-24 13:29:31,379 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 13:29:31,379 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 13:29:31,379 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 13:29:31,379 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 13:29:31,488 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-10-24 13:29:31,603 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-10-24 13:29:31,666 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:29:31,666 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-24 13:29:31,712 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-24 13:29:31,712 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-10-24 13:29:31,753 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-24 13:29:31,818 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-10-24 13:29:32,162 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:29:32,410 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:29:32,582 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60df60da: startup date [Wed Oct 24 13:29:30 CEST 2018]; root of context hierarchy
+2018-10-24 13:29:32,598 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 13:29:32,613 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 13:29:32,613 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 13:29:32,613 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.types.StatisticsResponse> com.example.demo.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 13:29:32,613 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 13:29:32,613 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 13:29:32,645 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:29:32,645 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:29:32,737 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2018-10-24 13:29:32,881 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-10-24 13:29:32,881 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 13:29:32,881 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 13:29:32,881 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:29:32,897 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2018-10-24 13:29:32,912 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2018-10-24 13:29:32,912 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 2.816 seconds (JVM running for 3.272)
+2018-10-24 13:30:42,298 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-24 13:30:42,299 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 13:30:42,312 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-10-24 13:30:42,718 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory
+2018-10-24 13:37:41,662 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 13:37:41,724 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on DESKTOP-BFFC9PR with PID 33256 (C:\Users\chris\git\test\demo\bin\main started by chris in C:\Users\chris\git\test\demo)
+2018-10-24 13:37:41,724 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: prod
+2018-10-24 13:37:41,755 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1458ed9c: startup date [Wed Oct 24 13:37:41 CEST 2018]; root of context hierarchy
+2018-10-24 13:37:42,368 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6188b2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 13:37:42,605 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-10-24 13:37:42,620 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:37:42,620 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-10-24 13:37:42,620 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 13:37:42,636 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\chris\AppData\Local\Microsoft\WindowsApps;C:\Users\chris\AppData\Local\GitHubDesktop\bin;.]
+2018-10-24 13:37:42,698 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-10-24 13:37:42,698 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 943 ms
+2018-10-24 13:37:42,745 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-10-24 13:37:42,745 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 13:37:42,745 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 13:37:42,745 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 13:37:42,745 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 13:37:42,837 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-10-24 13:37:42,947 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-10-24 13:37:43,025 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:37:43,025 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-24 13:37:43,072 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-24 13:37:43,087 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-10-24 13:37:43,118 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-24 13:37:43,197 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-10-24 13:37:43,528 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:37:43,808 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:37:43,964 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1458ed9c: startup date [Wed Oct 24 13:37:41 CEST 2018]; root of context hierarchy
+2018-10-24 13:37:43,980 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 13:37:44,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.types.StatisticsResponse> com.example.demo.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 13:37:44,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 13:37:44,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 13:37:44,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 13:37:44,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 13:37:44,042 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:37:44,042 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:37:44,121 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2018-10-24 13:37:44,292 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-10-24 13:37:44,292 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 13:37:44,292 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 13:37:44,292 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:37:44,308 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2018-10-24 13:37:44,325 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2018-10-24 13:37:44,328 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 2.884 seconds (JVM running for 3.339)
+2018-10-24 13:37:51,390 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-24 13:37:51,390 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 13:37:51,403 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-10-24 13:37:51,795 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-4] HHH000397: Using ASTQueryTranslatorFactory
+2018-10-24 13:37:57,747 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-5] Machine with id: 2 changed name from 'Sockset' to 'Socksett'
+2018-10-24 13:38:35,125 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-9] Machine with id: 2 changed name from 'Socksett' to 'Sockset'
+2018-10-24 13:39:08,165 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-3] Machine with id: 2 changed name from 'Sockset' to 'Sock set'
+2018-10-24 13:39:24,482 ERROR com.example.demo.MonitorController [http-nio-8080-exec-5] Machine not found: Sockset
+2018-10-24 13:40:03,620 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-9] Machine with id: 2 changed name from 'Sock set' to 'Sockset'
+2018-10-24 13:41:02,711 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(14)-127.0.0.1] Application shutdown requested.
+2018-10-24 13:41:02,711 INFO org.springframework.context.support.AbstractApplicationContext [RMI TCP Connection(14)-127.0.0.1] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1458ed9c: startup date [Wed Oct 24 13:37:41 CEST 2018]; root of context hierarchy
+2018-10-24 13:41:02,713 INFO org.springframework.jmx.export.MBeanExporter [RMI TCP Connection(14)-127.0.0.1] Unregistering JMX-exposed beans on shutdown
+2018-10-24 13:41:02,714 INFO org.springframework.jmx.support.MBeanRegistrationSupport [RMI TCP Connection(14)-127.0.0.1] Unregistering JMX-exposed beans
+2018-10-24 13:41:02,715 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(14)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:41:02,716 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2018-10-24 13:41:02,718 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2018-10-24 13:41:06,126 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 13:41:06,180 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on DESKTOP-BFFC9PR with PID 32864 (C:\Users\chris\git\test\demo\bin\main started by chris in C:\Users\chris\git\test\demo)
+2018-10-24 13:41:06,181 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: prod
+2018-10-24 13:41:06,210 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1800a575: startup date [Wed Oct 24 13:41:06 CEST 2018]; root of context hierarchy
+2018-10-24 13:41:06,839 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ac18b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 13:41:07,077 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2018-10-24 13:41:07,087 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:41:07,093 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2018-10-24 13:41:07,094 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 13:41:07,097 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\chris\AppData\Local\Microsoft\WindowsApps;C:\Users\chris\AppData\Local\GitHubDesktop\bin;.]
+2018-10-24 13:41:07,164 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2018-10-24 13:41:07,165 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 955 ms
+2018-10-24 13:41:07,214 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2018-10-24 13:41:07,217 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 13:41:07,217 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 13:41:07,217 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 13:41:07,218 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 13:41:07,326 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2018-10-24 13:41:07,446 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2018-10-24 13:41:07,515 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:41:07,525 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-24 13:41:07,577 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-24 13:41:07,578 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2018-10-24 13:41:07,606 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-24 13:41:07,687 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-10-24 13:41:08,039 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 13:41:08,315 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:41:08,494 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1800a575: startup date [Wed Oct 24 13:41:06 CEST 2018]; root of context hierarchy
+2018-10-24 13:41:08,512 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 13:41:08,537 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 13:41:08,538 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.types.StatisticsResponse> com.example.demo.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 13:41:08,539 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 13:41:08,540 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 13:41:08,540 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 13:41:08,564 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:41:08,564 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:41:08,669 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2018-10-24 13:41:08,845 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2018-10-24 13:41:08,846 INFO org.springframework.jmx.export.MBeanExporter [main] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 13:41:08,850 INFO org.springframework.jmx.export.MBeanExporter [main] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 13:41:08,857 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2018-10-24 13:41:08,864 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2018-10-24 13:41:08,875 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2018-10-24 13:41:08,877 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 2.986 seconds (JVM running for 3.449)
+2018-10-24 13:41:20,189 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-24 13:41:20,189 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 13:41:20,202 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-10-24 13:41:20,603 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory
+2018-10-24 13:41:24,656 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-5] Machine with id: 2 changed name from 'Sockset' to 'Sock set'
+2018-10-24 13:41:31,602 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-10] Machine with id: 2 changed name from 'Sock set' to 'Sockset'
+2018-10-24 13:50:00,676 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 13:50:01,670 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 916 ms
+2018-10-24 13:50:02,738 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:50:02,898 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@141e5bef: startup date [Wed Oct 24 13:50:00 CEST 2018]; root of context hierarchy
+2018-10-24 13:50:02,917 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 13:50:02,940 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.example.demo.types.StatisticsResponse> com.example.demo.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 13:50:02,941 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 13:50:02,941 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.example.demo.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 13:50:02,943 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 13:50:02,943 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 13:50:02,965 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:50:02,966 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:50:11,146 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 13:50:11,159 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-10-24 13:50:11,259 ERROR com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-1] Machine not found: third
+2018-10-24 13:50:11,259 ERROR com.example.demo.MonitorController [http-nio-8080-exec-1] Machine not found: third
+2018-10-24 13:50:46,786 ERROR com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-4] Machine not found: third
+2018-10-24 13:50:46,787 ERROR com.example.demo.MonitorController [http-nio-8080-exec-4] Machine not found: third
+2018-10-24 13:51:03,211 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-1] Machine with id: 1 changed name from 'Sockstickning' to 'Sock stickning'
+2018-10-24 13:51:46,005 INFO com.example.demo.service.MonitorServiceImpl [http-nio-8080-exec-5] Machine with id: 1 changed name from 'Sock stickning' to 'Sockstickning'
+2018-10-24 13:58:06,650 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 13:58:07,629 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 901 ms
+2018-10-24 13:58:08,695 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:58:08,853 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10a9d961: startup date [Wed Oct 24 13:58:06 CEST 2018]; root of context hierarchy
+2018-10-24 13:58:08,871 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 13:58:08,896 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 13:58:08,897 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 13:58:08,897 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 13:58:08,899 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 13:58:08,899 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 13:58:08,924 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:58:08,925 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 13:58:25,869 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 13:58:25,881 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-10-24 14:06:32,787 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:06:33,660 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 810 ms
+2018-10-24 14:06:34,505 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:06:34,630 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e31a9a: startup date [Wed Oct 24 14:06:32 CEST 2018]; root of context hierarchy
+2018-10-24 14:06:34,645 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:06:34,661 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 14:06:34,666 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 14:06:34,666 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 14:06:34,667 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:06:34,667 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:06:34,667 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:06:34,667 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:07:57,363 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 14:07:57,373 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018-10-24 14:09:40,003 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:09:41,003 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 920 ms
+2018-10-24 14:09:42,054 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:09:42,214 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61fe30: startup date [Wed Oct 24 14:09:40 CEST 2018]; root of context hierarchy
+2018-10-24 14:09:42,233 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:09:42,256 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 14:09:42,256 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 14:09:42,257 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 14:09:42,258 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:09:42,258 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:09:42,279 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:09:42,280 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:09:58,004 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 14:09:58,017 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-10-24 14:10:02,854 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-6] Machine with id: 2 changed name from 'Sockset' to 'Sock set'
+2018-10-24 14:10:14,877 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-9] Machine with id: 2 changed name from 'Sock set' to 'Sockset'
+2018-10-24 14:48:41,408 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m35s321ms734µs13ns).
+2018-10-24 15:27:28,052 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 15:27:29,121 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1000 ms
+2018-10-24 15:27:30,301 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:27:30,470 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60856961: startup date [Wed Oct 24 15:27:28 CEST 2018]; root of context hierarchy
+2018-10-24 15:27:30,488 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 15:27:30,506 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 15:27:30,506 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 15:27:30,506 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 15:27:30,506 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 15:27:30,506 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 15:27:30,537 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:27:30,537 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:28:10,116 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 15:28:10,129 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-10-24 15:28:41,985 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 15:28:42,970 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 907 ms
+2018-10-24 15:28:44,005 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:28:44,161 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b41dd5c: startup date [Wed Oct 24 15:28:42 CEST 2018]; root of context hierarchy
+2018-10-24 15:28:44,176 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 15:28:44,208 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 15:28:44,208 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 15:28:44,208 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 15:28:44,208 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 15:28:44,208 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 15:28:44,235 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:28:44,235 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:33:41,213 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 15:33:42,275 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 976 ms
+2018-10-24 15:33:43,382 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:33:43,551 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@363a52f: startup date [Wed Oct 24 15:33:41 CEST 2018]; root of context hierarchy
+2018-10-24 15:33:43,571 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 15:33:43,597 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 15:33:43,597 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 15:33:43,598 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 15:33:43,600 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 15:33:43,600 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 15:33:43,637 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:33:43,637 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:34:54,010 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 15:34:55,048 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 956 ms
+2018-10-24 15:34:56,131 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:34:56,300 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ae9cfc1: startup date [Wed Oct 24 15:34:54 CEST 2018]; root of context hierarchy
+2018-10-24 15:34:56,319 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 15:34:56,345 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 15:34:56,346 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 15:34:56,346 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 15:34:56,347 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 15:34:56,348 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 15:34:56,374 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 15:34:56,374 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:01:55,149 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:01:56,179 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 948 ms
+2018-10-24 16:01:57,206 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'monitorController': Unsatisfied dependency expressed through field 'monitorService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'monitorServiceImpl' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\MonitorServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'schedulePollAsync': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+2018-10-24 16:01:57,228 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'monitorController': Unsatisfied dependency expressed through field 'monitorService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'monitorServiceImpl' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\MonitorServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'schedulePollAsync': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at se.woolpower.monitor.MonitorApplication.main(MonitorApplication.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'monitorServiceImpl' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\MonitorServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'schedulePollAsync': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'schedulePollAsync': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:476)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 28 common frames omitted
+2018-10-24 16:03:58,220 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:03:59,263 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 966 ms
+2018-10-24 16:04:00,334 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+2018-10-24 16:04:00,353 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at se.woolpower.monitor.MonitorApplication.main(MonitorApplication.java:16)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:476)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 15 common frames omitted
+2018-10-24 16:04:44,582 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:04:45,668 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1007 ms
+2018-10-24 16:04:46,682 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+2018-10-24 16:04:46,701 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at se.woolpower.monitor.MonitorApplication.main(MonitorApplication.java:16)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:476)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 15 common frames omitted
+2018-10-24 16:06:39,990 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:06:41,030 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 961 ms
+2018-10-24 16:06:42,020 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+2018-10-24 16:06:42,038 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduledTasks' defined in file [C:\Users\chris\git\test\monitor\bin\main\se\woolpower\monitor\service\ScheduledTasks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at se.woolpower.monitor.MonitorApplication.main(MonitorApplication.java:16)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleTaskWithCronExpression': Cron expression must consist of 6 fields (found 7 in "0 0/5 0 ? * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:476)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:339)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 15 common frames omitted
+2018-10-24 16:08:25,153 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:08:26,185 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 951 ms
+2018-10-24 16:08:27,261 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:08:27,422 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c9d0d6: startup date [Wed Oct 24 16:08:25 CEST 2018]; root of context hierarchy
+2018-10-24 16:08:27,440 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 16:08:27,464 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 16:08:27,466 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 16:08:27,467 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 16:08:27,469 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 16:08:27,469 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 16:08:27,499 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:08:27,499 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:09:00,002 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:09:00,004 INFO se.woolpower.monitor.service.ScheduledTasks [pool-1-thread-1] Current Thread : pool-1-thread-1
+2018-10-24 16:10:00,000 INFO se.woolpower.monitor.service.ScheduledTasks [pool-1-thread-1] Current Thread : pool-1-thread-1
+2018-10-24 16:10:00,002 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:17:50,590 ERROR org.springframework.boot.context.logging.LoggingApplicationListener [main] Cannot set level: INFO   for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 16:17:51,590 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 919 ms
+2018-10-24 16:17:52,700 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:17:52,860 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a2d131d: startup date [Wed Oct 24 16:17:50 CEST 2018]; root of context hierarchy
+2018-10-24 16:17:52,876 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 16:17:52,913 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/renameMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.renameMachine(java.lang.String,java.lang.String)
+2018-10-24 16:17:52,914 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/stats/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<se.woolpower.monitor.types.StatisticsResponse> se.woolpower.monitor.MonitorController.getWeekDetails(java.lang.Integer,java.lang.Integer)
+2018-10-24 16:17:52,915 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/api/addMachine],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> se.woolpower.monitor.MonitorController.addMachine(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-10-24 16:17:52,917 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 16:17:52,918 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 16:17:52,937 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:17:52,937 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 16:18:00,013 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:18:00,122 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-24 16:18:03,184 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-24 16:18:03,184 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-24 16:18:06,199 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-24 16:18:06,199 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-24 16:18:09,213 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-24 16:18:09,213 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-24 16:18:12,214 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-24 16:18:12,214 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-24 16:18:13,991 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 16:18:14,003 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-10-24 16:18:15,215 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-24 16:18:15,215 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-24 16:18:18,222 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-24 16:18:18,222 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-24 16:18:19,115 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-5] Machine with id: 3 changed name from 'Stickning underkläder' to 'Stickning unerkläder'
+2018-10-24 16:18:21,223 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-24 16:18:21,223 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-24 16:18:24,235 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-24 16:18:24,235 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-24 16:18:27,236 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-24 16:18:27,236 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-24 16:18:30,236 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-24 16:18:30,612 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-9] Machine with id: 10 changed name from 'Pack' to 'Pak'
+2018-10-24 16:19:00,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:19:00,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-24 16:19:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-24 16:19:03,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-24 16:19:06,006 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-3] Machine with id: 10 changed name from 'Pak' to 'Pack'
+2018-10-24 16:19:06,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-24 16:19:06,010 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning unerkläder
+2018-10-24 16:19:09,022 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning unerkläder
+2018-10-24 16:19:09,022 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-24 16:19:10,472 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-7] Machine with id: 3 changed name from 'Stickning unerkläder' to 'Stickning underkläder'
+2018-10-24 16:19:12,036 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-24 16:19:12,036 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-24 16:19:15,046 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-24 16:19:15,046 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-24 16:19:18,048 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-24 16:19:18,048 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-24 16:19:21,057 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-24 16:19:21,057 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-24 16:19:24,062 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-24 16:19:24,062 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-24 16:19:27,069 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-24 16:19:27,069 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pak
+2018-10-24 16:19:30,075 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pak
+2018-10-24 16:20:00,014 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:20:00,017 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-24 16:20:03,019 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-24 16:20:03,019 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-24 16:20:06,021 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-24 16:20:06,021 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-24 16:20:06,421 ERROR se.woolpower.monitor.MonitorController [http-nio-8080-exec-6] Machine with name Beredning already exists.
+2018-10-24 16:20:09,033 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-24 16:20:09,033 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-24 16:20:11,195 INFO se.woolpower.monitor.service.MonitorServiceImpl [http-nio-8080-exec-10] Machine with id: 5 changed name from 'Accessoir' to 'Accessir'
+2018-10-24 16:20:12,033 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-24 16:20:12,033 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessoir
+2018-10-24 16:20:15,037 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessoir
+2018-10-24 16:20:15,037 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-24 16:20:18,038 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-24 16:20:18,039 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-24 16:20:21,040 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-24 16:20:21,040 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-24 16:20:24,046 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-24 16:20:24,046 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-24 16:20:27,057 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-24 16:20:27,057 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-24 16:20:30,071 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-24 16:21:00,002 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:21:00,005 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-24 16:21:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-24 16:21:03,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-24 16:21:06,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-24 16:21:06,018 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-24 16:21:09,026 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-24 16:21:09,026 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-24 16:21:12,032 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-24 16:21:12,032 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessir
+2018-10-24 16:21:15,040 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessir
+2018-10-24 16:21:15,040 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-24 16:21:18,051 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-24 16:21:18,051 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-24 16:21:21,065 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-24 16:21:21,065 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-24 16:21:24,071 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-24 16:21:24,071 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-24 16:21:27,076 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-24 16:21:27,076 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-24 16:21:30,078 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack
+2018-10-24 16:22:00,009 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] running poll
+2018-10-24 16:22:00,012 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockstickning
+2018-10-24 16:22:03,028 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockstickning
+2018-10-24 16:22:03,028 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Sockset
+2018-10-24 16:22:06,039 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Sockset
+2018-10-24 16:22:06,039 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Stickning underkläder
+2018-10-24 16:22:09,055 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Stickning underkläder
+2018-10-24 16:22:09,055 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Beredning
+2018-10-24 16:22:12,061 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Beredning
+2018-10-24 16:22:12,061 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Accessir
+2018-10-24 16:22:15,067 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Accessir
+2018-10-24 16:22:15,067 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Lite
+2018-10-24 16:22:18,073 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Lite
+2018-10-24 16:22:18,074 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Polo/Tröja
+2018-10-24 16:22:21,076 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Polo/Tröja
+2018-10-24 16:22:21,077 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Byxa
+2018-10-24 16:22:21,218 ERROR se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] sleep interrupted
+2018-10-24 16:22:21,218 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Byxa
+2018-10-24 16:22:21,218 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Jacka/Väst
+2018-10-24 16:22:21,218 ERROR se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] sleep interrupted
+2018-10-24 16:22:21,218 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Jacka/Väst
+2018-10-24 16:22:21,218 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] calling Pack
+2018-10-24 16:22:24,222 INFO se.woolpower.monitor.service.MonitorServiceImpl [pool-1-thread-1] logged result from Pack

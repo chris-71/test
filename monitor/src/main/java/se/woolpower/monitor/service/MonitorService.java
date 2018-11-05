@@ -2,6 +2,8 @@ package se.woolpower.monitor.service;
 
 import java.time.LocalDate;
 
+import org.springframework.scheduling.annotation.Async;
+
 import se.woolpower.monitor.exception.DuplicateEntityException;
 import se.woolpower.monitor.exception.EntityNotFoundException;
 import se.woolpower.monitor.types.StatisticsResponse;
@@ -20,12 +22,10 @@ public interface MonitorService {
 	 * @param url                   address to the machine
 	 * @param dailyProductionTarget the number of units that this machine should
 	 *                              produce each day
-	 * @param counterMax            maximum value of the counter before it turns
-	 *                              over
+	 *
 	 * @throws DuplicateEntityException
 	 */
-	void addMachine(String machineName, String url, Integer dailyProductionTarget, Integer counterMax)
-			throws DuplicateEntityException;
+	void addMachine(String machineName, Integer address, Integer dailyProductionTarget) throws DuplicateEntityException;
 
 	/**
 	 * @param oldName the current name of the machine
@@ -34,13 +34,10 @@ public interface MonitorService {
 	void renameMachine(String oldName, String newName) throws DuplicateEntityException, EntityNotFoundException;
 
 	/**
-	 * Adds a record to the database with a number of produced units and associates
-	 * the record with a machine
-	 *
-	 * @param machineName name of the machine
-	 * @param count       number of produced units
+	 * Fetch process change queue and store result in db
 	 */
-	void addRecord(String machineName, Integer count);
+	@Async
+	void processQueue();
 
 	/**
 	 * Fetches data from db and put together statistics for all machines
